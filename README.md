@@ -1,0 +1,23 @@
+# The implementation of cointegration-based pair trading strategy
+
+## Overview
+- Data used: Russell 1000 (USA) & Nifty 200 (India)
+- Trading time frame: 1 Dec 2020 to 29 Nov 2022
+
+## Portfolio construction
+- Run Total Least Squares (TLS) Regression to find the beta (hedge ratio) of each pair
+- Filtering pairs that is conintegrated based on ADF test for stationarity
+- Rank each pair based on their half life of the mean reversion (the lower the better)
+
+## Trading Signal
+- The z-score for open position is +/- 1.5
+- The z-score for close position is +/- 0.15
+- 15% stop loss is applied to each pair
+
+## Rebalancing
+- Equal-weight portfolio is used in this strategy
+- Pairs that are no longer cointegrated will be deleted from the portfolio
+
+## Assumption:
+- Transaction cost: commissions (8 bps), market impact (20 bps)
+- Short-selling margin: exactly the same as the short size
