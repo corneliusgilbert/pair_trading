@@ -1,9 +1,5 @@
 # The implementation of cointegration-based pair trading strategy
 
-## Overview
-- Data used: Russell 1000 (USA)
-- Trading time frame: 1 Dec 2020 to 29 Nov 2022
-
 ## Portfolio construction
 - Run Total Least Squares (TLS) Regression to find the beta (hedge ratio) of each pair
 - Filtering pairs that is conintegrated based on ADF test for stationarity
