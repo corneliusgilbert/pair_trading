@@ -1,7 +1,7 @@
 # The implementation of cointegration-based pair trading strategy
 
 ## Overview
-- Data used: Russell 1000 (USA) & Nifty 200 (India)
+- Data used: Russell 1000 (USA)
 - Trading time frame: 1 Dec 2020 to 29 Nov 2022
 
 ## Portfolio construction
