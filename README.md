@@ -4,6 +4,7 @@
 - Run Total Least Squares (TLS) Regression to find the beta (hedge ratio) of each pair
 - Filtering pairs that is conintegrated based on ADF test for stationarity
 - Rank each pair based on their half life of the mean reversion (the lower the better)
+- Select the top 30 pairs and an equal-weight portfolio is constructed by the selected pairs
 
 ## Trading Signal
 - The z-score for open position is +/- 1.5
